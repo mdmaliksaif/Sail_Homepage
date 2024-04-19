@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sail</title>
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="Header/Header.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    
+<!-- Here we'll load content from individual HTML files -->
+<div id="header"></div>
+<div id="middle"></div>
+<div id="cards"></div>
+<div id="network"></div>
+<div id="navbar"></div>
+<div id="social"></div>
+<div id="footer"></div>
+
+<!-- JavaScript to load content from HTML files -->
+<script>
+    $(document).ready(function(){
+    // Load header.html into the div with id "header"
+    $("#header").load("Header/header.html");
+    // Load navbar.html into the div with id "navbar"
+    $("#middle").load("Middle/HeroSection.html");
+    // Load middle.html into the div with id "middle"
+    // Load footer.html into the div with id "footer"
+    $("#navbar").load("Middle/social.html");
+    $("#cards").load("Middle/Cards.html");
+    $("#network").load("Middle/SailNetwork.html");
+    $("#social").load("Middle/footerupper.html");
+    $("#footer").load("Footer/footer.html");
+});
+</script>
+
+</body>
+</html>
